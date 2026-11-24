@@ -1,0 +1,40 @@
+{
+  "geode": "5.8.1",
+  "gd": {
+    "win": "2.2081"
+  },
+  "id": "noah.autodeafen-eclipse",
+  "name": "Auto Deafen for Eclipse",
+  "version": "v1.5.0",
+  "developer": "noah",
+  "description": "Auto Deafen with an in-level configuration popup opened by a native Geode Shift keybind. Records a readable Discord toggle-deafen key and normalizes level progress correctly, presses it at the chosen percentage, then again on death, restart, completion, or exit.",
+  "dependencies": {
+    "eclipse.eclipse-menu": {
+      "version": ">=1.9.4",
+      "required": true
+    }
+  },
+  "settings": {
+    "enabled": {
+      "name": "Auto Deafen",
+      "description": "Enable automatic deafen while playing a level.",
+      "type": "bool",
+      "default": false
+    },
+    "deafen-percent": {
+      "name": "Deafen at (%)",
+      "description": "Press your chosen Discord Toggle Deafen key when progress reaches this percentage.",
+      "type": "float",
+      "default": 7.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "open-menu-keybind": {
+      "name": "Open Auto Deafen Menu",
+      "description": "Open the Auto Deafen popup while you are inside a level. Shift works with either left or right Shift key.",
+      "type": "keybind",
+      "default": "Shift",
+      "category": "gameplay"
+    }
+  }
+}
